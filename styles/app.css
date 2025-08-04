@@ -81,7 +81,7 @@ table {
 :root {
 	--text-color: #1D2939;
 	--primery-color: #05A6A6;
-	--secondery-color: #E5E5E5B2;
+	--secondery-color: #F5F5F5;
 }
 
 html {
@@ -107,21 +107,42 @@ body {
 }
 
 .Accordion {
+	border-radius: 1rem;
+	background-color: var(--secondery-color);
+	border: 1px solid transparent;
+	margin-bottom: 5rem;
+}
 
+.Accordion--open {
+	border-color: (229, 229, 229, 0.7);
 }
 
 .Accordion__header {
-
+	color: var(--text-color);
+	cursor: pointer;
+	user-select: none;
+	padding: 1.8rem;
 }
 
-.Accordion__title {
+.Accordion--open .Accordion__header {
+	padding-bottom: 1.6rem;
+}
 
+.Accordion--open .Accordion__title {
+	color: var(--primery-color);
 }
 
 .Accordion__body {
+	padding: 0 1.8rem 3.6rem 1.8rem;
+	display: none;
+}
 
+.Accordion--open .Accordion__body {
+	display: block;
 }
 
 .Accordion__coption {
-
+	color: var(--text-color);
+	font-size: 1.4rem;
+	line-height: 2.4rem;
 }
