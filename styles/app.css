@@ -101,4 +101,27 @@ body {
 	color: var(--text-color);
 }
 
+.container {
+	width: 80rem;
+	margin: 10rem auto 0 auto;
+}
 
+.Accordion {
+
+}
+
+.Accordion__header {
+
+}
+
+.Accordion__title {
+
+}
+
+.Accordion__body {
+
+}
+
+.Accordion__coption {
+
+}
